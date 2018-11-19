@@ -4,6 +4,8 @@ import time
 
 
 class BaseScreen(object):
+    """Base class for other Page Objects"""
+
     def __init__(self, driver):
         self.driver = driver
         self.title = driver.instance.title

@@ -5,6 +5,7 @@ from .basescreen import BaseScreen
 
 
 class BookingScreen(BaseScreen):
+    """Models Booking Screen Elements as a Page Object """
 
     booking_btn_locator = (By.CLASS_NAME, "custom-info-btn")
     dropdown_locator = (By.CLASS_NAME, "select-box")

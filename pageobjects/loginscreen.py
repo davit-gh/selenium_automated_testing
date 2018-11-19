@@ -5,6 +5,7 @@ from .basescreen import BaseScreen
 
 
 class LoginScreen(BaseScreen):
+    """Models login functionality as a Page Object"""
 
     icon = (By.CLASS_NAME, "techbuddy-logo")
     mobile_field = code_field = (By.CLASS_NAME, "el-input__inner")
