@@ -26,5 +26,13 @@ are created. Another best practice used in the code is that there
 are no *magic* values. All string constants like URL, mobile number 
 and so on are stored in a separate file for an easier reference.
 
-All tests were run locally with 100% 
+Tests use python's unittest package. For each test a new 
+browser window is created, tests are performed, and the browser is
+ closed. All tests were run locally with 100% 
 <span style="color:green">*passed*</span> rate.
+
+## Software tools Used
+* Python 3
+* Selenium 
+* Pycharm
+* Chromedriver
