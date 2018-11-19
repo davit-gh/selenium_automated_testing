@@ -22,7 +22,7 @@ a test case in detailed set of test cases [in this Google Sheet](https://docs.go
 
 Using Page Objects the webpages are modeled as classes which allows
 code reusability. A Page Object for each of the test suites 
-are created. Another best practice used in the code is that there
+is created. Another best practice used in the code is that there
 are no *magic* values. All string constants like URL, mobile number 
 and so on are stored in a separate file for an easier reference.
 
