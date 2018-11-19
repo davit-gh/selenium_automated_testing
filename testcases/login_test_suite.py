@@ -10,13 +10,13 @@ class TestTechBuddyLogin(unittest.TestCase):
         self.driver = Driver()
         self.driver.navigate(strings.base_url)
 
-    def test_login_positive_login1a(self):
+    def test_login_positive_login_1a(self):
         login_screen = LoginScreen(self.driver)
         login_screen.page_title_equals_to("Boka en TechBuddy")
         login_screen.icon_is_displayed()
         login_screen.login_positive()
 
-    def test_incorrect_mobile_number_alphabetical_login1b(self):
+    def test_incorrect_mobile_number_alphabetical_login_1b(self):
         login_screen = LoginScreen(self.driver)
         login_screen.mobile_number_field_is_displayed()
         login_screen.submit_button_is_displayed()
@@ -24,7 +24,7 @@ class TestTechBuddyLogin(unittest.TestCase):
         login_screen.click_submit()
         login_screen.error_inline_is_displayed()
 
-    def test_incorrect_mobile_number_digits_login1c(self):
+    def test_incorrect_mobile_number_digits_login_1c(self):
         login_screen = LoginScreen(self.driver)
         login_screen.mobile_number_field_is_displayed()
         login_screen.submit_button_is_displayed()
@@ -32,7 +32,7 @@ class TestTechBuddyLogin(unittest.TestCase):
         login_screen.click_submit()
         login_screen.error_popup_is_displayed()
 
-    def test_correct_mobile_number_incorrect_code_login1d(self):
+    def test_correct_mobile_number_incorrect_code_login_1d(self):
         login_screen = LoginScreen(self.driver)
         login_screen.mobile_number_field_is_displayed()
         login_screen.submit_button_is_displayed()

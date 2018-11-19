@@ -10,7 +10,7 @@ class TestTechBuddyBookingValidation(unittest.TestCase):
         self.driver = Driver()
         self.driver.navigate(strings.base_url)
 
-    def test_category_dropdown_validation_booking2a(self):
+    def test_category_dropdown_validation_booking_2a(self):
         loginscreen = LoginScreen(self.driver)
         bookingscreen = loginscreen.login_positive()
         bookingscreen.new_booking_button_click()
@@ -28,7 +28,7 @@ class TestTechBuddyBookingValidation(unittest.TestCase):
             validation.validation_error_dropdown_xpath
         )
 
-    def test_textarea_validation_booking2c(self):
+    def test_textarea_validation_booking_2c(self):
         loginscreen = LoginScreen(self.driver)
         bookingscreen = loginscreen.login_positive()
         bookingscreen.new_booking_button_click()
@@ -49,7 +49,7 @@ class TestTechBuddyBookingValidation(unittest.TestCase):
             validation.validation_error_textarea_xpath
         )
 
-    def test_priceboxes_validation_booking2e(self):
+    def test_priceboxes_validation_booking_2e(self):
         loginscreen = LoginScreen(self.driver)
         bookingscreen = loginscreen.login_positive()
         bookingscreen.new_booking_button_click()
@@ -67,7 +67,7 @@ class TestTechBuddyBookingValidation(unittest.TestCase):
             validation.validation_error_price_xpath
         )
 
-    def test_all_elements_validation_booking2f(self):
+    def test_all_elements_validation_booking_2f(self):
         loginscreen = LoginScreen(self.driver)
         bookingscreen = loginscreen.login_positive()
         bookingscreen.new_booking_button_click()
