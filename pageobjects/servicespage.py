@@ -54,12 +54,12 @@ class ServicesPage(BaseScreen):
             sms_code_fields[i].send_keys(sms_code[i])
         self.wait_until_clickable(self.submit_button).click()
 
-    def verify_correct_name_is_displayed(self):
+    def validate_correct_name_is_displayed(self):
         first_name = self.select_element(self.first_name).text
         last_name = self.select_element(self.last_name).text
         assert first_name.lower() == strings.first_name.lower(), "Incorrect first name"
         assert last_name.lower() == strings.last_name.lower(), "Incorrect last name"
 
-    def verify_error_message_is_displayed(self):
+    def validate_error_message_is_displayed(self):
         error_msg_is_displayed = self.is_element_visible(self.error_div)
         assert error_msg_is_displayed, "Validation error message is not displayed."

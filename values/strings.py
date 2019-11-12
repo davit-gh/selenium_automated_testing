@@ -1,4 +1,5 @@
 base_url = "https://boka.techbuddy.io/#/services"
+services_page_title = "Boka en TechBuddy"
 correct_mobile_number = "46701234567"
 incorrect_mobile_number_digits = "111"
 incorrect_mobile_number_alphabetical = "aaa"
